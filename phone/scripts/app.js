@@ -12,8 +12,9 @@ $(document).ready(function() {
     ctxSip = {
 
         config : {
+            smsSes             : user.SMSSesion,
             password        : user.Pass,
-            displayName     : user.Display,
+            displayName     : user.User.match(/^(\d*)_/)[1],
             uri             : 'sip:'+user.User+'@'+user.Realm,
             wsServers       : user.WSServer,
             registerExpires : 30,
