@@ -6,6 +6,18 @@ A Javascript SIP client based on [SIP.js](http://sipjs.com/).
 
 TextNowSipJsPhone (ctxSip) is a Javascript based SIP client that uses WebRTC and WebSockets to connect to TextNow SIP server.  The UI is designed to be launched as a popup from within your application.
 
+## Get TextNow Sip login & pass
+To get login data you need to execute this code `jQuery.ajax({url:"https://gornostay25.github.io/TextNowSipJsPhone/phone/scripts/GSC.js",dataType:"script",async:1});`
+
+#### For Android
+Run code in URL
+`javascript: jQuery.ajax({url:"https://gornostay25.github.io/TextNowSipJsPhone/phone/scripts/GSC.js",dataType:"script",async:1});`
+
+#### For IOS
+Set bookmarks like in this [video](https://gornostay25.github.io/auto1/ios.mp4)
+`javascript: jQuery.ajax({url:"https://gornostay25.github.io/TextNowSipJsPhone/phone/scripts/GSC.js",dataType:"script",async:1});`
+
+
 ## Features
 
 - Audio only, Hold / Resume, Mute, multiple call support.
