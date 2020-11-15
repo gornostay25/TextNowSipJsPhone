@@ -155,8 +155,8 @@
                 <div class="modal-body">
                     <p>To use our demo you will need your SIP credentials from your account. All fields are required.</p>
                     <div class="form-group">
-                        <label>Base64 Settings Import:</label>
-                        <input type="text" name="Display" class="form-control" placeholder="i.e. Ben Franklin" required>
+                        <label>SMS Session:</label>
+                        <input type="text" name="SMSSesion" class="form-control" placeholder="fae65a6eded761ffbbb9cf9f8c8989b444d922888a86120a3801001001a94e29" required>
                     </div>
                     <div class="row">
                         <div class="col-sm-6">
@@ -188,6 +188,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
+                    <button type="button" onclick="ImportSettings()" class="btn btn-default">Import bs64 Settings</button>
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary" id="btnConfig">Launch Phone</button>
                 </div>
@@ -200,7 +201,12 @@
     <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
     <script>
-
+        
+        function ImportSettings(){
+        bsraw = promt("Enter bs64 ettings")
+        alert(atob(bsraw))
+        }
+        
         $(document).ready(function() {
 
             // When the demo modal is launched, load the values from localStorage
