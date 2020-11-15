@@ -203,8 +203,15 @@
     <script>
         
         function ImportSettings(){
-        bsraw = prompt("Enter bs64 ettings")
-        alert(atob(bsraw))
+            bsraw = prompt("Enter bs64 ettings");
+            if(!bsraw){
+                return;
+            }
+            bsData = atob(bsraw).split(".");
+             $('input[name="SMSSesion"]').val(bsData[2]);
+             $('input[name="Pass"]').val(bsData[1]);
+             $('input[name="User"]').val(bsData[0]);
+        
         }
         
         $(document).ready(function() {
