@@ -4,7 +4,7 @@
 
 A Javascript SIP client based on [SIP.js](http://sipjs.com/).
 
-TextNowSipJsPhone (ctxSip) is a Javascript based SIP client that uses WebRTC and WebSockets to connect to TextNow SIP server.  The UI is designed to be launched as a popup from within your application.  Works well with [Kazoo](https://github.com/2600hz/kazoo) from [2600hz](http://2600hz.com)
+TextNowSipJsPhone (ctxSip) is a Javascript based SIP client that uses WebRTC and WebSockets to connect to TextNow SIP server.  The UI is designed to be launched as a popup from within your application.
 
 ## Features
 
@@ -31,7 +31,3 @@ ctxSip uses:
 - [FontAwesome](http://fortawesome.github.io/Font-Awesome/)
 - [jQuery](http://jquery.com/)
 - [Moment.js](http://momentjs.com/)
-
-Tested on:
-
-- [Kazoo](http://2600hz.com)
