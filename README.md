@@ -24,7 +24,7 @@ TextNowSipJsPhone (ctxSip) is a Javascript based SIP client that uses WebRTC and
 
 ## Dependencies
 
-ctxSip uses:
+TextNowSipJsPhone (ctxSip) uses:
 
 - [SIP.js](http://sipjs.com/)
 - [Bootstrap](http://getbootstrap.com/)
